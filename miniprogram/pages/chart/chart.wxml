@@ -1,0 +1,56 @@
+<view class="chaart">
+<!-- top -->
+<view class="nav">
+<!-- year -->
+<view class="year" bindtap="showItem2" data-type="year">{{currentYear}}年<image class=".iconfont" src="../../imges/down.png"></image>
+<view class="year-box">
+</view>
+<!-- 年列表 -->
+<view class="year-list {{isYear?'show':''}}" >
+<view class="year-item" wx:for="{{yearlist}}" wx:for-item="item" data-year="{{item}}" 
+bindtap="selectYear" >{{item}}</view>
+
+</view>
+</view>
+<!-- month -->
+<view class="month">
+<!-- 月列表 -->
+<view class="month-list">
+<view wx:for="{{monthsort}}" wx:for-item="item" class="month-item" bindtap="selectMonth" data-month="{{item.month}}" style="{{item.isactive?'font-weight:bold':''}}" wx:for-index="index" data-index="{{index}}">{{item.month}}月</view>
+
+</view>
+</view>
+<!-- date -->
+<view class="date">
+
+<view class="date box">
+
+<view class="text" bindtap="showItem" data-type="{{isSelectMonth?'date':''}}">筛选</view>
+<view class="date-list {{isDate?'show':''}}">
+<view class="date-item" wx:for="{{datesort}}" wx:for-item="item" wx:for-index="index"
+data-index="{{index}}" catchtap="datetap" style="font-weight:{{item.isactive?'bold':''}}">{{item.date}}日</view>
+
+</view>
+
+</view>
+</view>
+
+</view>
+
+
+
+
+<!-- 标题 -->
+  <view class="title">
+    <view class="title-item" wx:for="{{tabData}}" wx:key="index" bindtap="toggleTap" data-index="{{index}}">
+      <view class="title-item-content {{item.type}} {{item.isAct ? 'act' : ''}}"> 
+        <view class="title-text">{{item.title}}</view>
+        <view class="title-money">￥{{item.money}}</view>
+      </view>
+    </view>
+    
+  
+  </view>
+</view>
+  <!-- 图表 -->
+

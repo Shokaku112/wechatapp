@@ -1,0 +1,158 @@
+.header{
+  height: 250rpx;
+  /* background-color: #f4ea2a; */
+  background-image: linear-gradient(to right,#f4ea2a,#F2BF44);
+  padding: 40rpx 60rpx;
+}
+.top-titel{
+  font-size: 28rpx;
+  color: #A5831F;
+}
+.top-tatal{
+font-size: 60rpx;
+font-weight: bold;
+color: #302C1F;
+}
+.top-tatal .small{
+  font-size: 38rpx;
+}
+.item-curent .fr{float: right;}
+.fl{float: left;}
+.clean{
+  content: "";
+  display: block;
+  clear: both;
+}
+.item-curent .fl{float: left;}
+
+.item-bottom{
+  float: left;
+}
+.item-curent{
+  /* margin-right: 20rpx; */
+  display: inline-block;
+}
+.font{
+  font-size: 25rpx;
+  margin-right: 10rpx;
+}
+
+.price{
+  /* margin-left: 20rpx; */
+  font-weight: bold;
+}
+.bottom{
+  margin-top: 100rpx;
+}
+.mg{
+  margin:0rpx 20rpx 0rpx 30rpx;
+}
+.recordtab{
+  width: 700rpx;
+  height: 80rpx;
+  border-radius: 100rpx;
+  background-color: #ebc004;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  text-align: center;
+ 
+}
+
+.pen{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 10rpx;
+  margin-right: 15rpx;
+}
+.innerrecord{
+  font-size: 35rpx;
+}
+.innr{
+  float:right;
+  font-size: 20rpx;
+  margin: 25rpx;
+  margin-left: -100rpx;
+  /* margin: 20rpx; */
+}
+.tab2{
+  width: 100%;
+  height: 50rpx;
+  
+  margin: 0 auto;
+  margin-top: 50rpx;
+  float: left;
+}
+.tabf1{
+  font-size: 30rpx;
+  margin-left: 20rpx;
+  color: #bfbfbf;
+}
+.tabf2{
+  font-size: 30rpx;
+  margin-left: 20rpx;
+  color: #bfbfbf;
+}
+.tabf3{
+  font-size: 30rpx;
+  margin-left: 0rpx;
+  font-weight: bold;
+  color: #bfbfbf;
+}
+.icon1{
+  width: 100rpx;
+  height: 50rpx;
+}
+.bottomtab{
+  width: 744rpx;
+  height: 827rpx;
+  margin-top: 50rpx;
+  background-color: white;
+}
+.contentview{
+  width: 700rpx;
+  height: 100rpx;
+  background-color: white;
+  margin: 0 auto;
+  margin-bottom: 40rpx;
+
+}
+.innerimg{
+  width: 70rpx;
+  height:70rpx;
+  margin-right: 30rpx;
+}
+.innerfon{
+  position: relative;
+  top: 10 rpx;
+  font-size:30rpx;
+  display: inline-block;
+  font-weight: bold;
+}
+.innerfonr{
+  float:right;
+  margin:20rpx;
+  color: red;
+  font-weight: bold;
+}
+.innerfontadd{
+  float:right;
+  margin:20rpx;
+  color: green;
+}
+.innerfoninfo{
+  right: 30rpx;
+  font-size: 24rpx;
+  margin-top: 7rpx;
+  color: gray;
+  font-weight:300;
+  letter-spacing: 2rpx;
+  /* 设置字体间距 */
+}
+.circle{
+  border-radius: 50%;
+  display: inline-block;
+  width: 13rpx;
+  height: 13rpx;
+  background: black;
+  margin: 0rpx 5rpx 0rpx 5rpx;
+}

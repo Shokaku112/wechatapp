@@ -1,0 +1,72 @@
+
+<view class="home">
+<!-- head -->
+<view class="header">
+<view class="top">
+<view class="top-title">本月结余</view>
+<view class="top-tatal">{{Month.total}}.<text class="small">{{Month.decimal}}</text>
+</view>
+</view>
+<view class="bottom">
+
+<view class="item-bottom">
+<view class="item-curent font">本月收入</view>
+<view class="item-curent price">{{Month.incometotal}}</view>
+<text class="mg">|</text>
+</view>
+
+
+<view class="item-bottom">
+<view class="item-curent font">本月支出</view>
+<view class="item-curent price">{{Month.outcometotal}}</view>
+</view>
+
+
+</view>
+</view>
+<view class="recordtab">
+<image class="pen" src="../../imges/pen.png"></image>
+<text class="innerrecord">记账单</text>
+
+<view class="innr">切换版本</view>
+</view>
+
+<view class="tab2">
+
+<text class="tabf1">{{getDate.month}}月{{getDate.date}}号</text>
+<text class="tabf2"><text wx-if="{{isToday}}">今天</text>收入:</text><text class="tabf3">{{cost.income}}</text>
+<text class="tabf2">支出:</text><text class="tabf3">{{cost.outcome}}</text>
+<text style="clear:left;"></text>
+<view class="section" style="float:right;margin-right:15rpx">
+
+  <picker mode="date" value="{{date}}" start="{{timer.start}}" end="{{timer.end}}" 
+  bindchange="bindDateChange" >
+    <view class="picker">
+     <view class="circle"></view>
+    <view class="circle"></view>
+    <view class="circle"></view>
+    {{date}}
+    </view>
+  </picker>
+</view>
+<!-- <view style="float:right;margin-right:15rpx">
+
+</view> -->
+<view class="bottomtab">
+
+<!-- <view wx:for="{{array}}">
+  {{index}}: {{item.message}}
+</view> -->
+<view wx:for="{{array}}" wx:for-index="idx" wx:for-item="itemName" class="contentview">
+<view class="contentview-innerl">
+<image class="innerimg" src="{{itemName.img}}"></image>
+<view class="innerfon">{{itemName.id}}
+<view class="innerfoninfo">{{itemName.message}}</view>
+</view>
+<text class="innerfonr" style="{{itemName.style}}">{{itemName.status}}</text>
+</view>
+</view>
+</view>
+</view>
+
+</view>

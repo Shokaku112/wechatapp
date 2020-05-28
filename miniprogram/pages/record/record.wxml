@@ -1,0 +1,85 @@
+<!--miniprogram/pages/record/record.wxml-->
+<!-- head -->
+<view class="header"></view>
+<!-- content -->
+<view class="content">
+<!-- category -->
+<view class="type">
+<!-- title -->
+<view class="type-title">
+<view class="title-item1" style="" bindtap="outtcome" data-title="收入" style="{{chages2}}">支出</view>
+<view class="title-item2" bindtap="income" data-title="支出" style="{{chages1}}">收入</view>
+</view>
+<swiper style="{{array2[0].display}}" class="swiper" indicator-dots="true" indicator-color="rgba(255,0,0,.5)" autoplay="{{false}}" interval="3000" circular="true" previous-margin="0rpx" next-margin="0rpx">
+  <block wx:for="{{banner}}" wx:for-item="itemBlock">
+    <swiper-item class="swipertab1">
+      <view class="swiper-item">
+      <view  class="innercon">
+      <view wx:for="{{banner[index]}}" wx:for-item="itemName" data-block="{{itemBlock}}" wx:for-index="index" data-index="{{index}}" class="{{itemName.isactive?'activeflexmode':'flexmode'}}" bindtap="clickchanged">
+      <image class="img" src="{{itemName.icon_url}}"></image>
+      <view class="imgfont">{{itemName.title}}</view>
+      </view>
+      </view>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
+
+<swiper style="{{array2[1].display}}" class="swiper2" indicator-dots="true" indicator-color="rgba(255,0,0,.5)" autoplay="{{false}}" interval="3000" circular="true" previous-margin="0rpx" next-margin="0rpx">
+  <block wx:for="{{banner}}" wx:for-item="itemBlock">
+    <swiper-item class="swipertab1">
+      <view class="swiper-item">
+      <view  class="innercon">
+      <view wx:for="{{banner[index]}}" wx:for-item="itemName" data-block="{{itemBlock}}" wx:for-index="index" data-index="{{index}}" class="{{itemName.isactive?'activeflexmode':'flexmode'}}" bindtap="clickchanged">
+      <image class="img" src="{{itemName.icon_url}}"></image>
+      <view class="imgfont">{{itemName.title}}</view>
+      </view>
+      </view>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="mid">
+<view class="midtop">
+<view class="left">
+<view style="display:inline-block">
+<image class="wallet" src="../../imges/wallet.png"></image>
+<text class="fontwallet">账户选择</text>
+</view>
+<!-- <view class="fontwallet"></view> -->
+</view>
+</view>
+<view class="line"></view>
+<view class="midflex">
+<view class="midflexbox" style="{{array4[index].style}}" wx:for="{{array4}}" wx:for-item="it" wx:for-index="index" data-indx='{{index}}'  bindtap="changed">
+{{array4[index].tagname}}</view>
+</view>
+</view>
+<view class="bottom">
+<view class="flexf1">
+<label>日期</label>
+<view class="section">
+
+  <picker mode="date" value="{{date}}" data-="{{date}}" start="{{setData.start}}" end="{{setData.end}}" bindchange="bindDateChange">
+    <view class="picker">
+ <input placeholder-class="color" bindinput="getDate" disabled="disabled" placeholder="{{setData.Dated}}">{{date}}</input>
+    </view>
+  </picker>
+</view>
+
+</view>
+<view class="flexf" >
+<label>金额</label>
+<input placeholder-class="color" bindinput="price" placeholder="请输入金额"></input>
+</view>
+<view class="flexf" >
+<label>备注</label>
+<input placeholder-class="color" bindinput="info" placeholder="请输入备注"></input>
+</view>
+</view>
+
+<view class="save" bindtap="savedata">保存</view>
+
+</view>
+</view>
+

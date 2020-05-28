@@ -1,0 +1,57 @@
+{
+  "icon_url":"cloud://test-server-04aog.7465-test-server-04aog-1302176545/typeimges/type1.png",
+  "title":"餐饮",
+  "type":"cangying"
+}
+{
+  "icon_url":"cloud://test-server-04aog.7465-test-server-04aog-1302176545/typeimges/type2.png",
+  "title":"购物",
+  "type":"gouwu"
+}
+{
+  "icon_url":"cloud://test-server-04aog.7465-test-server-04aog-1302176545/typeimges/type3.png",
+  "title":"出行",
+  "type":"chux"
+}
+{
+  "icon_url":"cloud://test-server-04aog.7465-test-server-04aog-1302176545/typeimges/type4.png",
+  "title":"健康",
+  "type":"jiank"
+}
+{
+  "icon_url":"cloud://test-server-04aog.7465-test-server-04aog-1302176545/typeimges/type5.png",
+  "title":"娱乐",
+  "type":"yul"
+}
+
+{
+  "icon_url":"cloud://test-server-04aog.7465-test-server-04aog-1302176545/typeimges/type6.png",
+  "title":"住房",
+  "type":"zhuf"
+}
+
+{
+  "icon_url":"cloud://test-server-04aog.7465-test-server-04aog-1302176545/typeimges/type7.png",
+  "title":"人情",
+  "type":"renq"
+}
+
+{
+  "icon_url":"cloud://test-server-04aog.7465-test-server-04aog-1302176545/typeimges/type8.png",
+  "title":"交通",
+  "type":"jiaot"
+}
+
+{
+  "icon_url":"cloud://test-server-04aog.7465-test-server-04aog-1302176545/typeimges/type9.png",
+  "title":"学习",
+  "type":"xuex"
+}
+{
+  "icon_url":"cloud://test-server-04aog.7465-test-server-04aog-1302176545/typeimges/type10.png",
+  "title":"投资",
+  "type":"touzi"
+}
+
+
+

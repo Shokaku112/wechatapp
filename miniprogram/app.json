@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/chart/chart",
+    "pages/home/home",
+    "pages/record/record",
+    "pages/my/my"
+   
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#0e932e",
+    "navigationBarTitleText": "记录生活",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "sitemapLocation": "sitemap.json",
+    "style": "v2"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "./imges/home.png",
+        "selectedIconPath": "./imges/home@active.png"
+      },
+      {
+        "pagePath": "pages/record/record",
+        "text": "记录",
+        "iconPath": "./imges/record.png",
+        "selectedIconPath": "./imges/record@active.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "./imges/user.png",
+        "selectedIconPath": "./imges/user@active.png"
+      },
+      {
+        "pagePath": "pages/chart/chart",
+        "text": "chart",
+        "iconPath": "./imges/chart.png",
+        "selectedIconPath": "./imges/chart@active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap36.json"
+}
